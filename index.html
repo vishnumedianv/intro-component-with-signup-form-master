@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <script src="index.js"></script>
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper1">
+        <div>
+          <h1>Learn to code by watching others</h1>
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+      </div>
+      <div class="wrapper2">
+        <div class="offer-section">
+          <div>
+            <span class="offer">
+              <span class="offer-bold">Try it free 7 days</span> then $20/mo.
+              thereafter
+            </span>
+          </div>
+        </div>
+        <div class="form-box">
+          <div class="form">
+            <div>
+              <input id="fname" type="text" placeholder="First Name" />
+              <label for="fname">
+                <svg
+                  id="fname-err-icon"
+                  width="30"
+                  class="input-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon"
+                  viewBox="0 0 512 512"
+                >
+                  <title>Alert Circle</title>
+                  <path
+                    d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+                    fill="hsl(0, 100%, 74%)"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                  <path
+                    d="M250.26 166.05L256 288l5.73-121.95a5.74 5.74 0 00-5.79-6h0a5.74 5.74 0 00-5.68 6z"
+                    fill="hsl(0, 100%, 74%)"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    fill="white"
+                    d="M256 367.91a20 20 0 1120-20 20 20 0 01-20 20z"
+                  />
+                </svg>
+              </label>
+            </div>
+            <div>
+              <span id="fname-error">First name cannot be empty</span>
+            </div>
+            <div>
+              <input id="lname" type="text" placeholder="Last Name" /><label
+                for="lname"
+              >
+                <svg
+                  id="lname-err-icon"
+                  width="30"
+                  class="input-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon"
+                  viewBox="0 0 512 512"
+                >
+                  <title>Alert Circle</title>
+                  <path
+                    d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+                    fill="hsl(0, 100%, 74%)"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                  <path
+                    d="M250.26 166.05L256 288l5.73-121.95a5.74 5.74 0 00-5.79-6h0a5.74 5.74 0 00-5.68 6z"
+                    fill="hsl(0, 100%, 74%)"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    fill="white"
+                    d="M256 367.91a20 20 0 1120-20 20 20 0 01-20 20z"
+                  />
+                </svg>
+              </label>
+            </div>
+            <div>
+              <span id="lname-error">Last name cannot be empty</span>
+            </div>
+            <div>
+              <input
+                id="email"
+                type="email"
+                placeholder="Email Address"
+              /><label for="email">
+                <svg
+                  id="email-err-icon"
+                  width="30"
+                  class="input-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon"
+                  viewBox="0 0 512 512"
+                >
+                  <title>Alert Circle</title>
+                  <path
+                    d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+                    fill="hsl(0, 100%, 74%)"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                  <path
+                    d="M250.26 166.05L256 288l5.73-121.95a5.74 5.74 0 00-5.79-6h0a5.74 5.74 0 00-5.68 6z"
+                    fill="hsl(0, 100%, 74%)"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    fill="white"
+                    d="M256 367.91a20 20 0 1120-20 20 20 0 01-20 20z"
+                  />
+                </svg>
+              </label>
+            </div>
+            <div>
+              <span id="email-error">Looks like this is not an email</span>
+            </div>
+            <div>
+              <input
+                id="password"
+                type="password"
+                placeholder="Password"
+              /><label for="password">
+                <svg
+                  id="password-err-icon"
+                  width="30"
+                  class="input-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon"
+                  viewBox="0 0 512 512"
+                >
+                  <title>Alert Circle</title>
+                  <path
+                    d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+                    fill="hsl(0, 100%, 74%)"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                  <path
+                    d="M250.26 166.05L256 288l5.73-121.95a5.74 5.74 0 00-5.79-6h0a5.74 5.74 0 00-5.68 6z"
+                    fill="hsl(0, 100%, 74%)"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    fill="white"
+                    d="M256 367.91a20 20 0 1120-20 20 20 0 01-20 20z"
+                  />
+                </svg>
+              </label>
+            </div>
+            <div>
+              <span id="password-error">Password name cannot be empty</span>
+            </div>
+            <div>
+              <button onclick="check()">Claim your free trial</button>
+            </div>
+            <div class="tnc">
+              <span class="consent"
+                >By clicking the button, you are agreeing to our
+                <span class="terms">Terms and Services</span></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

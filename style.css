@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+
+  --Blue: hsl(248, 32%, 49%);
+
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./images/bg-intro-desktop.png), var(--Red);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  height: 80%;
+}
+
+.wrapper1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.wrapper1 div {
+  padding: 20px;
+}
+
+.wrapper2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.offer-section {
+  height: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.offer-section div {
+  width: 100%;
+  height: 60%;
+  background: var(--Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-box {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+}
+.form .tnc {
+  position: relative;
+  text-align: left;
+}
+
+.form {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input {
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  border: 0.1px solid;
+  border-color: var(--Grayish-Blue);
+  width: 100%;
+  text-indent: 10px;
+  margin-top: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: var(--Green);
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: var(--Grayish-Blue);
+  font-weight: 600;
+}
+/* fonts */
+
+h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+}
+
+p {
+  color: white;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.offer {
+  color: white;
+  font-weight: 300;
+}
+
+.offer-bold {
+  font-weight: 600;
+}
+
+.consent {
+  color: var(--Grayish-Blue);
+  font-size: 0.8rem;
+}
+
+.terms {
+  color: var(--Red);
+  font-weight: 600;
+}
+
+.input-icon {
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  right: 3px;
+  top: calc(
+    50% - 0.6em
+  ); /* Keep icon in center of input, regardless of the input height */
+}
+
+.form div {
+  position: relative;
+  text-align: right;
+}
+
+.error {
+  color: var(--Red);
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+/* hover */
+button:hover {
+  cursor: pointer;
+  filter: brightness(120%);
+}
+
+.terms:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.offer:hover {
+  cursor: pointer;
+  transform: scaleX(1.01);
+}
+
+#fname-err-icon,
+#lname-err-icon,
+#email-err-icon,
+#password-err-icon {
+  visibility: hidden;
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  right: 3px;
+  top: calc(
+    50% - 0.6em
+  ); /* Keep icon in center of input, regardless of the input height */
+}
+
+#fname-error,
+#lname-error,
+#email-error,
+#password-error {
+  display: none;
+  color: var(--Red);
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 950px) {
+  .form-box {
+    padding: 20px 0;
+    height: fit-content;
+  }
+
+  .form {
+    height: fit-content;
+  }
+  h1 {
+    font-size: 2.6rem;
+    line-height: 3.1rem;
+  }
+
+  .offer {
+    font-size: 0.8rem;
+  }
+
+  .consent {
+    font-size: 0.6rem;
+  }
+  button {
+    margin-top: 20px;
+  }
+
+  .input-icon {
+    font-size: 1.3rem;
+
+    right: 3px;
+    top: calc(
+      50% - 0.6em
+    ); /* Keep icon in center of input, regardless of the input height */
+  }
+
+  .error {
+    color: var(--Red);
+    font-weight: 500;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    padding: 20px 0;
+    height: 100%;
+    overflow: scroll;
+  }
+  .container {
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper1 {
+    width: 60%;
+    text-align: center;
+  }
+
+  .form-box {
+    padding: 20px 0;
+    height: fit-content;
+  }
+
+  .form {
+    height: fit-content;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+    line-height: 3.1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .offer-section {
+    height: 60px;
+  }
+
+  button {
+    margin-top: 20px;
+  }
+
+  .consent {
+    line-height: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .offer {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  button {
+    font-size: 0.65rem;
+  }
+}
